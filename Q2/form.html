@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Application Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Job Application Form</h2>
+    
+    <fieldset>
+      <legend>Personal Information:</legend>
+    <div class="form-group">
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName">
+ 
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName">
+
+      <label for="phone">Phone Number:</label>
+      <input type="text" id="phone">
+ 
+      <label for="email">Email Address:</label>
+      <input type="email" id="email">
+
+      <label for="address">Address:</label>
+      <input type="street" id="street" required placeholder="street">
+      <input type="city" id="city" required placeholder="city">
+      <input type="state" id="state" required placeholder="state">
+      <input type="zip" id="zip" required placeholder="ZIP Code">
+    </div>
+  </fieldset>
+    
+  <fieldset>
+    <legend>Education:</legend>
+    <div class="form-group">
+    <label for="education">Highest Level of Education Attained:</label>
+    <input type="text" id="education">
+
+    <label for="school">Name of School/University:</label>
+    <input type="text" id="school">
+
+    <label for="major">Major/Area of Study:</label>
+    <input type="text" id="major">
+
+    <label for="year">Graduation Year:</label>
+    <input type="text" id="year">
+  </div>
+</fieldset>
+  <fieldset>
+    <legend>Resume & Cover Letter</legend>
+  <div class="form-group">
+    <label for="resume">Upload Resume:</label>
+    <input type="file" id="resume">
+
+    <label for="coverLetter">Cover Letter:</label>
+    <textarea id="coverLetter" rows="4"></textarea>
+  </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Previous Job Titles:</legend>
+  <div class="form-group">
+    <label for="company">Company Name(s):</label>
+    <input type="text" id="company">
+
+    <label for="empolyeDate">Employment Date:</label>
+    <input type="text" id="empolyeDate">
+
+    <label for="responsibilty">Job Resposibilities:</label>
+    <textarea id="responsibilty" rows="3" placeholder="Write your resposibilities in the previous jab"></textarea>
+  </div>
+</fieldset>
+
+<fieldset>
+  <legend>Skills:</legend>
+  <div class="form-group">
+    <label for="skills">Relevant Skills (e.g., programming languages, software proficiency):</label>
+    <input type="text" id="skills">
+
+    <label for="certifications">Upload Certifications:</label>
+    <input type="file" id="certifications">
+  </div>
+</fieldset>
+
+<fieldset>
+  <legend>Availability:</legend>
+  <div class="form-group">
+    <label for="startDate">Start Date:</label>
+    <input type="date" id="startDate">
+
+    <label for="relocate">Willingness to Relocate:</label>
+    <select id="relocate">
+      <option value="">Select</option>
+      <option value="Yes">Yes</option>
+      <option value="No">No</option>
+    </select>
+
+    <label for="schedule">Preferred Work Schedule:</label>
+    <input type="text" id="schedule">
+  </div>
+</fieldset>
+
+<fieldset>
+  <legend>References:</legend>
+  <div class="form-group">
+    <label for="refName">Reference Name:</label>
+    <input type="text" id="refName">
+
+    <label for="refContact">Reference Contact Information:</label>
+    <input type="text" id="refContact">
+
+    <label for="refRelation">Relationship to Applicant:</label>
+    <input type="text" id="refRelation">
+  </div>
+</fieldset>
+
+<fieldset>
+  <legend>Additional Questions:</legend>
+  <div class="form-group">
+    <label for="whyCompany">Why do you want to work for this company?</label>
+    <textarea id="whyCompany" rows="4"></textarea>
+  </div>
+</fieldset>
+
+<fieldset>
+  <legend>Consent & Agreement</legend>
+    <div class="form-group">
+      <label>
+        <input type="checkbox" id="agreeTerms">
+        I agree to the terms and conditions
+      </label>
+
+      <label>
+        <input type="checkbox" id="privacyPolicy">
+        I acknowledge the privacy policy
+      </label>
+    </div>
+</fieldset>
+  <!-- General Error Message -->
+  <div class="error" id="error-message"></div>
+
+  <!-- Submit Button -->
+  <button class="btn" id="submitBtn">Submit Application</button>
+
+  <!-- Table View Button -->
+  <button class="btn" id="viewTableBtn">View Applications as Table</button>
+  
+  <!-- Placeholder for table -->
+  <div id="applicationTable"></div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #a5a2a2;
+}
+
+.left-nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 83vh;
+  overflow: hidden; /* Make sure content doesn't overflow */
+}
+
+.head img {
+  width: auto; 
+  height: auto;
+  max-width: 85%; 
+  max-height: 90vh;
+  margin: 0 auto;
+  object-fit: cover; /* Ensure image fits well */
+}
+
+/* Update for navigation lists */
+.nav-links, .nav-links-right, .headerr {
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+
+.nav-links li, .nav-links-right li, .headerr li {
+  margin-left: 20px;
+}
+
+.nav-links a, .nav-links-right a, .headerr a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+  font-weight: bold;
+}
+
+.nav-links a:hover, .nav-links-right a:hover, .headerr a:hover {
+  color: #f07800;
+}
+
+.headerr {
+  padding-top: 30px;
+  padding-left: 10px;
+}
+
+/* Menu icon for mobile view */
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  padding-right: 50px;
+}
+
+/* Dropdown menu hidden by default */
+.dropdown-menu {
+  display: none;
+  background-color: #001eff;
+  position: absolute;
+  top: 60px;
+  width: 100%;
+  z-index: 1;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+.dropdown-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.dropdown-menu ul li {
+  padding: 15px;
+  text-align: center;
+}
+
+.dropdown-menu ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.dropdown-menu ul li a:hover {
+  color: #f07800;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+
+  .nav-links, .nav-links-right {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block; /* Show hamburger icon in mobile view */
+  }
+
+  .head {
+    height: 90vh; /* Adjust the height on mobile for better fit */
+  }
+
+  .head img {
+    max-width: 350%; /* Image should take full width on mobile */
+    max-height: 350%; /* Image should take full height on mobile */
+  }
+
+  .headerr {
+    font-size: 1.1rem;
+    text-align: center; /* Center the header links on mobile */
+  }
+
+  /* Align the menu properly for mobile */
+  .dropdown-menu ul li {
+    padding: 10px 5px;
+  }
+}

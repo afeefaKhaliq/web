@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abletonr</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="left-nav">
+      <div class="logo">
+        <img src="C:\Users\lenovo\Downloads\logo.png" alt="Logo" />
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Live</a></li>
+        <li><a href="#">Push</a></li>
+        <li><a href="#">Note</a></li>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Packs</a></li>
+        <li><a href="#">Help</a></li>
+        <li><a href="#" style="color:#f07400;;">More +</a></li>
+      </ul>
+    </div>
+    <ul class="nav-links-right">
+      <li><a href="#" style="color: rgb(56, 56, 245);">Try Live 12 for free</a></li>
+      <li><a href="#" style="font-size: small;">Login or register</a></li>
+    </ul>
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div> <!-- Hamburger icon -->
+  </nav>
+
+  <!-- Dropdown menu (for mobile) -->
+  <div id="dropdown-menu" class="dropdown-menu">
+    <ul>
+      <li><a href="#">Live</a></li>
+      <li><a href="#">Push</a></li>
+      <li><a href="#">Note</a></li>
+      <li><a href="#">Link</a></li>
+      <li><a href="#">Shop</a></li>
+      <li><a href="#">Packs</a></li>
+      <li><a href="#">Help</a></li>
+      <li><a href="#" style="color: #f07400;">More +</a></li>
+      <li><a href="#">Try Live 12 for free</a></li>
+      <li><a href="#">Login or register</a></li>
+    </ul>
+  </div>
+
+  <div>
+    <ul class="headerr">
+      <li> <a href="#" style="color: #f07400; font-size: small;">About</a></li>
+      <li> <a href="#" style="font-size: small;">Jobs</a></li>
+      <li> <a href="#" style="font-size: small;">Apprenticeships</a></li>
+    </ul>
+  </div>
+
+  <div class="head">
+    <img src="C:\Users\lenovo\Pictures\header.png" alt="header" />
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("dropdown-menu");
+      menu.classList.toggle("show");
+    }
+  </script>
+</body>
+</html>
